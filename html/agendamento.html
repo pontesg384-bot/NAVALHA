@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVALHA | Agendamento</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">NAVALHA</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="agendamento.html">Agendamento</a>
+            <a href="profissionais.html">Profissionais</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="pagina-agendamento">
+
+        <section class="agendamento">
+
+            <h2>Faça seu Agendamento</h2>
+
+            <p>Preencha os dados abaixo para solicitar seu horário.</p>
+
+            <form id="form-agendamento">
+
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="servico">Escolha o serviço:</label>
+                <select id="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="Corte masculino">Corte masculino</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Sobrancelha">Sobrancelha</option>
+                    <option value="Corte na máquina">Corte na máquina</option>
+                    <option value="Cabelo + barba">Cabelo + barba</option>
+                    <option value="Lavagem capilar">Lavagem capilar</option>
+                </select>
+
+                <label for="profissional">Escolha o profissional:</label>
+                <select id="profissional" required>
+                    <option value="">Selecione um profissional</option>
+                    <option value="João Silva">João Silva</option>
+                    <option value="Carlos Souza">Carlos Souza</option>
+                    <option value="Marcos Oliveira">Marcos Oliveira</option>
+                </select>
+
+                <label for="data">Escolha a data:</label>
+                <input type="date" id="data" required>
+
+                <label for="horario">Escolha o horário:</label>
+                <input type="time" id="horario" required>
+
+                <button type="submit" class="botao">
+                    Solicitar agendamento
+                </button>
+
+                <p id="mensagem-agendamento"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NAVALHA - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
